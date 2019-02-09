@@ -272,6 +272,7 @@ public class PgDiffTest {
                   , {"alter_view_owner", false, false, false, false}
                   , {"grant_on_table_cols_mixed", false, false, false, false}
                   , {"grant_on_view_cols_mixed", false, false, false, false}
+                  , {"manual_set_statistics", false, false, false, false}
                 });
     }
     /**
