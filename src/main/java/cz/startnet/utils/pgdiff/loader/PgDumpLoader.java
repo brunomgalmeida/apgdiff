@@ -432,7 +432,7 @@ public class PgDumpLoader { //NOPMD
      *
      * @return true if the specified position is quoted, otherwise false
      */
-    @SuppressWarnings("AssignmentToForLoopParameter")
+    //@SuppressWarnings("AssignmentToForLoopParameter")
     private static boolean isQuoted(final StringBuilder sbString,
             final int pos) {
         boolean isQuoted = false;

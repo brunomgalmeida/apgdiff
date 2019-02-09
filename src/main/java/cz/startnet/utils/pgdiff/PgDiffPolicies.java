@@ -7,11 +7,6 @@ package cz.startnet.utils.pgdiff;
 
 import cz.startnet.utils.pgdiff.schema.*;
 import java.io.PrintWriter;
-import java.text.MessageFormat;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
 import java.util.Iterator;
 
 public class PgDiffPolicies {
@@ -77,7 +72,7 @@ public class PgDiffPolicies {
                               searchPathHelper.outputSearchPath(writer);
                               alterPolicySQL(writer, newPolicy);
                           } else {
-                              List<String> tempOldRoles = new ArrayList<String>(policy.getRoles());
+                              //List<String> tempOldRoles = new ArrayList<String>(policy.getRoles());
                               boolean equalRoles =
                                   newPolicy.getRoles().containsAll(policy.getRoles()) &&
                                   policy.getRoles().containsAll(newPolicy.getRoles());

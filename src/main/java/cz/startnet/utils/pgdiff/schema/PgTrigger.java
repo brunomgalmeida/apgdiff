@@ -85,7 +85,7 @@ public class PgTrigger {
     /**
      * Optional list of columns for UPDATE event.
      */
-    @SuppressWarnings("CollectionWithoutInitialCapacity")
+    //@SuppressWarnings("CollectionWithoutInitialCapacity")
     private final List<String> updateColumns = new ArrayList<String>();
     /**
      * WHEN condition.

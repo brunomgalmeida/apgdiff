@@ -21,18 +21,18 @@ public class PgTable extends PgRelation {
     /**
      * List of inheritedColumns defined on the table.
      */
-    @SuppressWarnings("CollectionWithoutInitialCapacity")
+    //@SuppressWarnings("CollectionWithoutInitialCapacity")
     private final List<PgInheritedColumn> inheritedColumns = new ArrayList<PgInheritedColumn>();
     /**
      * List of constraints defined on the table.
      */
-    @SuppressWarnings("CollectionWithoutInitialCapacity")
+    //@SuppressWarnings("CollectionWithoutInitialCapacity")
     private final List<PgConstraint> constraints =
             new ArrayList<PgConstraint>();
     /**
      * List of names of inherited tables.
      */
-    @SuppressWarnings("CollectionWithoutInitialCapacity")
+    //@SuppressWarnings("CollectionWithoutInitialCapacity")
     private final List<Pair<String,String>> inherits = new ArrayList<Pair<String,String>>();
     /**
      * WITH clause. If value is null then it is not set, otherwise can be set to
@@ -417,7 +417,7 @@ public class PgTable extends PgRelation {
      * @return list of columns that have statistics defined
      */
     private List<PgColumn> getColumnsWithStatistics() {
-        @SuppressWarnings("CollectionWithoutInitialCapacity")
+        //@SuppressWarnings("CollectionWithoutInitialCapacity")
         final List<PgColumn> list = new ArrayList<PgColumn>();
 
         for (PgColumn column : columns) {

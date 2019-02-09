@@ -6,7 +6,6 @@
 package cz.startnet.utils.pgdiff.schema;
 
 import cz.startnet.utils.pgdiff.PgDiffUtils;
-import java.util.List;
 
 /**
  * Stores rule information.

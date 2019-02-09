@@ -69,10 +69,6 @@ public class PgDiffArguments {
      * Whether Schema creation should be ignored.
      */
     private boolean ignoreSchemaCreation;
-    /**
-     * Drop If Exists and Create If Exists where possible
-     */
-    private boolean useIfExists;
 
     /**
      * Setter for {@link #addDefaults}.
@@ -229,7 +225,7 @@ public class PgDiffArguments {
      * @return true if arguments were parsed and execution can continue,
      *         otherwise false
      */
-    @SuppressWarnings("AssignmentToForLoopParameter")
+    //@SuppressWarnings("AssignmentToForLoopParameter")
     public boolean parse(final PrintWriter writer, final String[] args) {
         boolean success = true;
         final int argsLength;

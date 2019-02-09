@@ -65,7 +65,7 @@ public class PgColumn {
     /**
      * List of privileges defined on the table.
      */
-    @SuppressWarnings("CollectionWithoutInitialCapacity")
+    //@SuppressWarnings("CollectionWithoutInitialCapacity")
     private final List<PgColumnPrivilege> privileges = new ArrayList<PgColumnPrivilege>();
 
     /**

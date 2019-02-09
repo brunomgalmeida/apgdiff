@@ -21,22 +21,22 @@ public abstract class PgRelation {
     /**
      * List of columns defined on the relation.
      */
-    @SuppressWarnings("CollectionWithoutInitialCapacity")
+    //@SuppressWarnings("CollectionWithoutInitialCapacity")
     protected final List<PgColumn> columns = new ArrayList<PgColumn>();
     /**
      * List of indexes defined on the relation.
      */
-    @SuppressWarnings("CollectionWithoutInitialCapacity")
+    //@SuppressWarnings("CollectionWithoutInitialCapacity")
     private final List<PgIndex> indexes = new ArrayList<PgIndex>();
     /**
      * List of triggers defined on the table/view.
      */
-    @SuppressWarnings("CollectionWithoutInitialCapacity")
+    //@SuppressWarnings("CollectionWithoutInitialCapacity")
     private final List<PgTrigger> triggers = new ArrayList<PgTrigger>();
     /**
      * List of rules defined on the table/view.
      */
-    @SuppressWarnings("CollectionWithoutInitialCapacity")
+    //@SuppressWarnings("CollectionWithoutInitialCapacity")
     private final List<PgRule> rules = new ArrayList<PgRule>();    
     /**
      * Name of the index on which the table/matview is clustered
@@ -58,7 +58,7 @@ public abstract class PgRelation {
     /**
      * List of privileges defined on the table.
      */
-    @SuppressWarnings("CollectionWithoutInitialCapacity")
+    //@SuppressWarnings("CollectionWithoutInitialCapacity")
     private final List<PgRelationPrivilege> privileges = new ArrayList<PgRelationPrivilege>();
     /**
      * Column the table is owner to.

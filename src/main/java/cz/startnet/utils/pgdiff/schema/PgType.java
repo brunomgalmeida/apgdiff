@@ -20,7 +20,7 @@ public class PgType {
     /**
      * List of columns defined on the table.
      */
-    @SuppressWarnings("CollectionWithoutInitialCapacity")
+    //@SuppressWarnings("CollectionWithoutInitialCapacity")
     private final List<PgColumn> columns = new ArrayList<PgColumn>();
     private final List<String> enumValues = new ArrayList<String>();
 
@@ -191,7 +191,7 @@ public class PgType {
      * @return list of columns that have statistics defined
      */
     private List<PgColumn> getColumnsWithStatistics() {
-        @SuppressWarnings("CollectionWithoutInitialCapacity")
+        //@SuppressWarnings("CollectionWithoutInitialCapacity")
         final List<PgColumn> list = new ArrayList<PgColumn>();
 
         for (PgColumn column : columns) {

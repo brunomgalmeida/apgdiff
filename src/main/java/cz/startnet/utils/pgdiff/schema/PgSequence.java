@@ -57,7 +57,7 @@ public class PgSequence {
     /**
      * List of privileges defined on the sequence.
      */
-    @SuppressWarnings("CollectionWithoutInitialCapacity")
+    //@SuppressWarnings("CollectionWithoutInitialCapacity")
     private final List<PgSequencePrivilege> privileges = new ArrayList<PgSequencePrivilege>();
     /**
      *  Value for AS or null if no value is specified.

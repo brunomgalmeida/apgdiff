@@ -89,7 +89,7 @@ public class PgDiffTriggers {
      */
     private static List<PgTrigger> getDropTriggers(final PgRelation oldRelation,
             final PgRelation newRelation) {
-        @SuppressWarnings("CollectionWithoutInitialCapacity")
+        //@SuppressWarnings("CollectionWithoutInitialCapacity")
         final List<PgTrigger> list = new ArrayList<PgTrigger>();
 
         if (newRelation != null && oldRelation != null) {
@@ -115,7 +115,7 @@ public class PgDiffTriggers {
      */
     private static List<PgTrigger> getNewTriggers(final PgRelation oldRelation,
             final PgRelation newRelation) {
-        @SuppressWarnings("CollectionWithoutInitialCapacity")
+        //@SuppressWarnings("CollectionWithoutInitialCapacity")
         final List<PgTrigger> list = new ArrayList<PgTrigger>();
 
         if (newRelation != null) {
@@ -212,7 +212,7 @@ public class PgDiffTriggers {
      */
     private static List<PgTrigger> getEnablerOrDisableTriggers(final PgRelation oldRelation,
             final PgRelation newRelation) {
-        @SuppressWarnings("CollectionWithoutInitialCapacity")
+        //@SuppressWarnings("CollectionWithoutInitialCapacity")
         final List<PgTrigger> list = new ArrayList<PgTrigger>();
 
         if (newRelation != null)  {

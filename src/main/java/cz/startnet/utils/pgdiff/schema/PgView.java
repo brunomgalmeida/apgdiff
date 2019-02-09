@@ -78,7 +78,7 @@ public class PgView extends PgRelation {
      * @return list of column names or null
      */
     public List<String> getDeclaredColumnNames() {
-        @SuppressWarnings("CollectionWithoutInitialCapacity")
+        //@SuppressWarnings("CollectionWithoutInitialCapacity")
         final List<String> list = new ArrayList<String>();
 
         if (!declareColumnNames)

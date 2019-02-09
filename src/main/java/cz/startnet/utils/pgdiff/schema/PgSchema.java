@@ -20,38 +20,38 @@ public class PgSchema {
     /**
      * List of functions defined in the schema.
      */
-    @SuppressWarnings("CollectionWithoutInitialCapacity")
+    //@SuppressWarnings("CollectionWithoutInitialCapacity")
     private final List<PgFunction> functions = new ArrayList<PgFunction>();
     /**
      * List of sequences defined in the schema.
      */
-    @SuppressWarnings("CollectionWithoutInitialCapacity")
+    //@SuppressWarnings("CollectionWithoutInitialCapacity")
     private final List<PgSequence> sequences = new ArrayList<PgSequence>();
     /**
      * List of rels defined in the schema.
      */
-    @SuppressWarnings("CollectionWithoutInitialCapacity")
+    //@SuppressWarnings("CollectionWithoutInitialCapacity")
     private final List<PgRelation> rels = new ArrayList<PgRelation>();
     /**
      * List of types defined in the schema.
      */
-    @SuppressWarnings("CollectionWithoutInitialCapacity")
+    //@SuppressWarnings("CollectionWithoutInitialCapacity")
     private final List<PgType> types = new ArrayList<PgType>();
     /**
      * List of indexes defined in the schema.
      */
-    @SuppressWarnings("CollectionWithoutInitialCapacity")
+    //@SuppressWarnings("CollectionWithoutInitialCapacity")
     private final List<PgIndex> indexes = new ArrayList<PgIndex>();
     /**
      * List of primary keys defined in the schema.
      */
-    @SuppressWarnings("CollectionWithoutInitialCapacity")
+    //@SuppressWarnings("CollectionWithoutInitialCapacity")
     private final List<PgConstraint> primaryKeys =
             new ArrayList<PgConstraint>();
    /**
      * List of rules defined in the schema.
      */
-    @SuppressWarnings("CollectionWithoutInitialCapacity")
+    //@SuppressWarnings("CollectionWithoutInitialCapacity")
     private final List<PgRule> rules = new ArrayList<PgRule>();
     
     /**
@@ -315,7 +315,7 @@ public class PgSchema {
      * @return list of tables
      */
     public List<PgTable> getTables() {
-        @SuppressWarnings("CollectionWithoutInitialCapacity")
+        //@SuppressWarnings("CollectionWithoutInitialCapacity")
         final List<PgTable> list = new ArrayList<PgTable>();
 
         for (PgRelation rel : rels) {
@@ -356,7 +356,7 @@ public class PgSchema {
      * @return list of views
      */
     public List<PgView> getViews() {
-        @SuppressWarnings("CollectionWithoutInitialCapacity")
+        //@SuppressWarnings("CollectionWithoutInitialCapacity")
         final List<PgView> list = new ArrayList<PgView>();
 
         for (PgRelation rel : rels) {
@@ -454,7 +454,7 @@ public class PgSchema {
      * @return list of rules
      */
     public List<PgRule> getRules() {
-        @SuppressWarnings("CollectionWithoutInitialCapacity")
+        //@SuppressWarnings("CollectionWithoutInitialCapacity")
         final List<PgRule> list = new ArrayList<PgRule>();
 
         for (PgRelation rel : rels) {

@@ -12,9 +12,7 @@ import cz.startnet.utils.pgdiff.schema.PgType;
 import java.io.PrintWriter;
 import java.text.MessageFormat;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 /**
  * Diffs types.
@@ -223,9 +221,9 @@ public class PgDiffTypes {
     private static void updateTypeColumns(final PrintWriter writer,
             final PgDiffArguments arguments, final PgType oldType,
             final PgType newType, final SearchPathHelper searchPathHelper) {
-        @SuppressWarnings("CollectionWithoutInitialCapacity")
+        //@SuppressWarnings("CollectionWithoutInitialCapacity")
         final List<String> statements = new ArrayList<String>();
-        @SuppressWarnings("CollectionWithoutInitialCapacity")
+        //@SuppressWarnings("CollectionWithoutInitialCapacity")
         final List<PgColumn> dropDefaultsColumns = new ArrayList<PgColumn>();
         addDropTypeColumns(statements, oldType, newType);
         addCreateTypeColumns(

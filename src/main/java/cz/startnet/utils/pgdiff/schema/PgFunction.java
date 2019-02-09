@@ -26,7 +26,7 @@ public class PgFunction {
     /**
      * List of arguments.
      */
-    @SuppressWarnings("CollectionWithoutInitialCapacity")
+    //@SuppressWarnings("CollectionWithoutInitialCapacity")
     private final List<Argument> arguments = new ArrayList<Argument>();
     /**
      * Whole definition of the function from RETURNS keyword.
@@ -317,7 +317,7 @@ public class PgFunction {
     /**
      * Function argument information.
      */
-    @SuppressWarnings("PublicInnerClass")
+    //@SuppressWarnings("PublicInnerClass")
     public static class Argument {
 
         /**

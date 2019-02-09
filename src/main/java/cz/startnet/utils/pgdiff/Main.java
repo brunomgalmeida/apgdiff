@@ -27,12 +27,12 @@ public class Main {
      */
     public static void main(final String[] args)
             throws UnsupportedEncodingException {
-        @SuppressWarnings("UseOfSystemOutOrSystemErr")
+        //@SuppressWarnings("UseOfSystemOutOrSystemErr")
         final PrintWriter writer = new PrintWriter(System.out, true);
         final PgDiffArguments arguments = new PgDiffArguments();
 
         if (arguments.parse(writer, args)) {
-            @SuppressWarnings("UseOfSystemOutOrSystemErr")
+            //@SuppressWarnings("UseOfSystemOutOrSystemErr")
             final PrintWriter encodedWriter = new PrintWriter(
                     new OutputStreamWriter(
                     System.out, arguments.getOutCharsetName()));

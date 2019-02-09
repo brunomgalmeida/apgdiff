@@ -8,7 +8,6 @@ package cz.startnet.utils.pgdiff;
 import cz.startnet.utils.pgdiff.schema.PgRelation;
 import cz.startnet.utils.pgdiff.schema.PgRule;
 import cz.startnet.utils.pgdiff.schema.PgSchema;
-import cz.startnet.utils.pgdiff.schema.PgType;
 import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.List;
@@ -92,7 +91,7 @@ public class PgDiffRules {
      */
     private static List<PgRule> dropRules(final PgRelation oldRelation,
             final PgRelation newRelation) {
-        @SuppressWarnings("CollectionWithoutInitialCapacity")
+        //@SuppressWarnings("CollectionWithoutInitialCapacity")
         final List<PgRule> list = new ArrayList<PgRule>();
 
         if (newRelation != null && oldRelation != null) {
@@ -118,7 +117,7 @@ public class PgDiffRules {
      */
     private static List<PgRule> getNewRules(final PgRelation oldRelation,
             final PgRelation newRelation) {
-        @SuppressWarnings("CollectionWithoutInitialCapacity")
+        //@SuppressWarnings("CollectionWithoutInitialCapacity")
         final List<PgRule> list = new ArrayList<PgRule>();
 
         if (newRelation != null) {

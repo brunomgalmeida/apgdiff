@@ -11,7 +11,6 @@ import cz.startnet.utils.pgdiff.schema.PgDatabase;
 import cz.startnet.utils.pgdiff.schema.PgSchema;
 import cz.startnet.utils.pgdiff.schema.PgType;
 import java.text.MessageFormat;
-import javax.xml.parsers.ParserConfigurationException;
 
 /**
  * Parses CREATE TABLE statements.
