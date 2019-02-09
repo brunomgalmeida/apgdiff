@@ -336,6 +336,16 @@ public class AlterRelationParser {
                 } else {
                     parser.throwUnsupportedCommand();
                 }
+            } else if (parser.expectOptional("(")) {
+            	//ALTER [ COLUMN ] column_name SET ( attribute_option = value [, ... ] )
+            	 while (!parser.expectOptional(")")) {
+            		 System.out.println("TODO FIX " + parser.getExpression());	  
+            		 if (parser.expectOptional(")")) {
+                         break;
+                     } else {
+                         parser.expect(",");
+                     }
+            	 }
             } else {
                 parser.throwUnsupportedCommand();
             }
