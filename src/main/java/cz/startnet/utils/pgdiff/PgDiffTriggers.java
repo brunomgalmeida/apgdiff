@@ -8,6 +8,8 @@ package cz.startnet.utils.pgdiff;
 import cz.startnet.utils.pgdiff.schema.PgRelation;
 import cz.startnet.utils.pgdiff.schema.PgSchema;
 import cz.startnet.utils.pgdiff.schema.PgTrigger;
+
+import java.io.Console;
 import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.List;
@@ -214,18 +216,26 @@ public class PgDiffTriggers {
             final PgRelation newRelation) {
         //@SuppressWarnings("CollectionWithoutInitialCapacity")
         final List<PgTrigger> list = new ArrayList<PgTrigger>();
-
+        
         if (newRelation != null)  {
     
-                for (final PgTrigger newTrigger : newRelation.getTriggers()) {
-                    
-                   PgTrigger oldTrigger = oldRelation.getTrigger(newTrigger.getName());
-                    if ((newTrigger.isDisable() && oldTrigger==null) || 
-                           (oldTrigger!=null && oldTrigger.isDisable()!=newTrigger.isDisable())) {
-                        list.add(newTrigger);
-                    }
-                }
-            
+            for (final PgTrigger newTrigger : newRelation.getTriggers()) {
+            	
+            	try {
+            		PgTrigger oldTrigger = null;
+            		if (oldRelation != null) {
+            			oldTrigger = oldRelation.getTrigger(newTrigger.getName());
+            		}
+            		
+            		if ((newTrigger.isDisable() && oldTrigger==null) || 
+	                       (oldTrigger!=null && oldTrigger.isDisable()!=newTrigger.isDisable())) {
+	                    list.add(newTrigger);
+	                }
+	            }catch(Exception e) {
+	            	System.err.println("\nERROR checking " + newTrigger.getName());
+	            	throw (e);
+	            }
+            }
         }
 
         return list;
